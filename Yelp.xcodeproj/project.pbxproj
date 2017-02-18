@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		046C25CE1E52B9B700811C69 /* BusinessCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046C25CD1E52B9B700811C69 /* BusinessCell.swift */; };
 		222D8A5B19CCF9F900D2DB53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222D8A5A19CCF9F900D2DB53 /* AppDelegate.swift */; };
 		222D8A6019CCF9F900D2DB53 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 222D8A5E19CCF9F900D2DB53 /* Main.storyboard */; };
 		222D8A6219CCF9F900D2DB53 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 222D8A6119CCF9F900D2DB53 /* Images.xcassets */; };
@@ -20,6 +21,34 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		04A7849C1E5807E9006CD773 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04A784951E5807E9006CD773 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 34CAF88403110F4BF0314C75D88FA04C;
+			remoteInfo = AFNetworking;
+		};
+		04A7849E1E5807E9006CD773 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04A784951E5807E9006CD773 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 88735B4377F51BBF28EDD6BC769A2074;
+			remoteInfo = BDBOAuth1Manager;
+		};
+		04A784A01E5807E9006CD773 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04A784951E5807E9006CD773 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2DED51631DDAB1A1200FEEB67A7D1478;
+			remoteInfo = "Pods-Yelp";
+		};
+		04A784A21E5807E9006CD773 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04A784951E5807E9006CD773 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 99D7FB65F17421E70C7A1DF5D5371E1C;
+			remoteInfo = "Pods-YelpTests";
+		};
 		222D8A6B19CCF9F900D2DB53 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 222D8A4D19CCF9F900D2DB53 /* Project object */;
@@ -30,6 +59,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		046C25CD1E52B9B700811C69 /* BusinessCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusinessCell.swift; sourceTree = "<group>"; };
+		04A784951E5807E9006CD773 /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pods.xcodeproj; path = "../ios_yelp_swift-master 3/Pods/Pods.xcodeproj"; sourceTree = "<group>"; };
 		0A1000F3975EB43318C1D4FA /* Pods_YelpTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YelpTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		222D8A5519CCF9F900D2DB53 /* Yelp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yelp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		222D8A5919CCF9F900D2DB53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -71,9 +102,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		046C25CA1E52B76E00811C69 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				046C25CD1E52B9B700811C69 /* BusinessCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		04A784961E5807E9006CD773 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04A7849D1E5807E9006CD773 /* AFNetworking.framework */,
+				04A7849F1E5807E9006CD773 /* BDBOAuth1Manager.framework */,
+				04A784A11E5807E9006CD773 /* Pods_Yelp.framework */,
+				04A784A31E5807E9006CD773 /* Pods_YelpTests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		222D8A4C19CCF9F900D2DB53 = {
 			isa = PBXGroup;
 			children = (
+				04A784951E5807E9006CD773 /* Pods.xcodeproj */,
 				222D8A5719CCF9F900D2DB53 /* Yelp */,
 				222D8A6D19CCF9F900D2DB53 /* YelpTests */,
 				222D8A5619CCF9F900D2DB53 /* Products */,
@@ -94,6 +145,7 @@
 		222D8A5719CCF9F900D2DB53 /* Yelp */ = {
 			isa = PBXGroup;
 			children = (
+				046C25CA1E52B76E00811C69 /* Views */,
 				22AAAA9A1AEA0AA100A544AF /* Models */,
 				222D8A7A19CCFAAA00D2DB53 /* API */,
 				22AAAA9D1AEA1EC600A544AF /* View Controllers */,
@@ -253,6 +305,12 @@
 			mainGroup = 222D8A4C19CCF9F900D2DB53;
 			productRefGroup = 222D8A5619CCF9F900D2DB53 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 04A784961E5807E9006CD773 /* Products */;
+					ProjectRef = 04A784951E5807E9006CD773 /* Pods.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				222D8A5419CCF9F900D2DB53 /* Yelp */,
@@ -260,6 +318,37 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		04A7849D1E5807E9006CD773 /* AFNetworking.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = AFNetworking.framework;
+			remoteRef = 04A7849C1E5807E9006CD773 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		04A7849F1E5807E9006CD773 /* BDBOAuth1Manager.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = BDBOAuth1Manager.framework;
+			remoteRef = 04A7849E1E5807E9006CD773 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		04A784A11E5807E9006CD773 /* Pods_Yelp.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Pods_Yelp.framework;
+			remoteRef = 04A784A01E5807E9006CD773 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		04A784A31E5807E9006CD773 /* Pods_YelpTests.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Pods_YelpTests.framework;
+			remoteRef = 04A784A21E5807E9006CD773 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		222D8A5319CCF9F900D2DB53 /* Resources */ = {
@@ -379,6 +468,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				046C25CE1E52B9B700811C69 /* BusinessCell.swift in Sources */,
 				22AAAA9C1AEA1EC300A544AF /* BusinessesViewController.swift in Sources */,
 				22AAAA991AEA0A9700A544AF /* Business.swift in Sources */,
 				222D8A7D19CCFAE000D2DB53 /* YelpClient.swift in Sources */,
